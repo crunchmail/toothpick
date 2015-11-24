@@ -12,16 +12,37 @@
   1 = General Style
 ========================================================================== */
 
-#outlook a{ padding:0; } /* Force Outlook to provide a "view in browser" button. */
+/* Force Outlook to provide a "view in browser" button. */
+#outlook a {
+  padding: 0;
+}
 
-.ReadMsgBody{ width:100%; } .ExternalClass{ width:100%; } /* Force Hotmail to display emails at full width */
+/* Force Hotmail / Outlook.com to display emails at full width */
+.ReadMsgBody,
+.ExternalClass {
+  width: 100%;
+}
+
+/* Force Hotmail / Outlook.com to display normal line spacing, */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
 
 body{
   width:100% !important;
   -webkit-text-size-adjust:none;/* Prevent Webkit platforms from changing default text sizes. */
+  -ms-text-size-adjust: none;
   margin: 0;
   padding: 0;
+  /*Font-family Backup*/
+  font-family: sans-serif;
 }
+
 img {
   border: 0;
   height: auto;
@@ -30,26 +51,28 @@ img {
   text-decoration: none;
   display: block;
   width: 100%;
+  -ms-interpolation-mode: bicubic;
 }
+
 table {
   border-collapse: collapse;
   margin: 0 auto; /*Fix for yahoo align center bug*/
 }
+
 table td { border-collapse: collapse; }
 
 /* ==========================================================================
   2 = Message header/footer
 ========================================================================== */
 
-.message_users {
-  color: #999;
+.crunchMessageUsers {
   padding:15px;
   font-size: 14px;
   text-align: center;
   font-family:Arial, sans-serif;
 }
-.message_users a {
-  color: #666;
+
+.crunchMessageUsers a {
   text-decoration: none;
 }
 
@@ -165,6 +188,8 @@ table td { border-collapse: collapse; }
   display: block; /*use for tag a*/
 }
 
+.crunchWrapper .crunchElement:first-child { margin-top: 0; }
+
 .crunchElement.crunchButton { display: table; }
 
 .crunchLink {
@@ -173,6 +198,8 @@ table td { border-collapse: collapse; }
 }
 
 .crunchButton { text-align: center; }
+
+.crunchButton p { margin: 0; }
 
 .crunchButton a { text-decoration: none; }
 
