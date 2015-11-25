@@ -43,14 +43,16 @@ body{
   font-family: sans-serif;
 }
 
-img {
+a img {
   border: 0;
+}
+
+img {
   height: auto;
-  line-height: 100%;
   outline: 0;
   text-decoration: none;
-  display: block;
-  width: 100%;
+  max-width: 100%;
+  width: auto;
   -ms-interpolation-mode: bicubic;
 }
 
