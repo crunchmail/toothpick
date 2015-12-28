@@ -1,0 +1,10 @@
+{
+  "name": "toothpick",
+  "homepage": "https://github.com/crunchmail/toothpick",
+  "version": "0.0.1",
+  "main":"toothpick.css",
+  "ignore": [
+    "bower.json",
+    "README.md"
+  ]
+}
