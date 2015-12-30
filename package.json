@@ -1,0 +1,27 @@
+{
+  "name": "toothpick",
+  "version": "0.1.1",
+  "description": "Framework email",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-license": "^1.0.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-rename": "^1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crunchmail/toothpick.git"
+  },
+  "author": "Courgette <courgette@farcie.fr> (courgette.farcie.fr)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/crunchmail/toothpick/issues"
+  },
+  "homepage": "https://github.com/crunchmail/toothpick#readme"
+}
