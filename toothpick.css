@@ -53,6 +53,7 @@ img {
   text-decoration: none;
   max-width: 100%;
   width: auto;
+  display: block;
   -ms-interpolation-mode: bicubic;
 }
 
