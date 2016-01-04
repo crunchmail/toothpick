@@ -140,10 +140,10 @@ table td { border-collapse: collapse; }
 .crunchBlockNoBg.crunch1-3ColRight div:nth-child(2) { width: 180px; }
 
 /* 1-4 + 3-4 columns */
-.crunchBlock.crunch1-4ColLeft div:first-child { width: 410px; }
-.crunchBlockNoBg.crunch1-4ColLeft div:first-child { width: 430px; }
-.crunchBlock.crunch1-4ColLeft div:nth-child(2) { width: 110px; }
-.crunchBlockNoBg.crunch1-4ColLeft div:nth-child(2) { width: 130px; }
+.crunchBlock.crunch1-4ColLeft div:first-child { width: 110px; }
+.crunchBlockNoBg.crunch1-4ColLeft div:first-child { width: 130px; }
+.crunchBlock.crunch1-4ColLeft div:nth-child(2) { width: 410px; }
+.crunchBlockNoBg.crunch1-4ColLeft div:nth-child(2) { width: 430px; }
 
 /* 3-4 + 1-4 columns */
 .crunchBlock.crunch1-4ColRight div:first-child { width: 410px; }
