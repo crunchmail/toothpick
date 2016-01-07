@@ -209,8 +209,6 @@ table td { border-collapse: collapse; }
   display: block; /*use for tag a*/
 }
 
-.crunchWrapper .crunchElement:first-child { margin-top: 0; }
-
 .crunchElement.crunchButton { display: table; }
 
 .crunchLink {
