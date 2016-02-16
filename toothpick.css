@@ -86,7 +86,10 @@ table td { border-collapse: collapse; }
 
 .crunchGlobalWrapper { min-width: 600px; /*to Fix layout Gmail*/ }
 
-.crunchWFull { width: 600px; }
+.crunchWFull {
+    width: 100%;
+    min-width: 600px;
+}
 
 .crunchW3-4 { width: 450px; }
 .crunchW2-3 { width: 400px; }
@@ -106,6 +109,11 @@ table td { border-collapse: collapse; }
 
 .crunchBlock div { padding: 10px; }
 
+.crunchBlock > table,
+.crunchBlockNoBg > table {
+    width: 600px;
+}
+
 .crunchCol div {
   display: inline-block;
   vertical-align: top;
@@ -115,6 +123,17 @@ table td { border-collapse: collapse; }
 .crunchCol td {
   letter-spacing: -5px;/*better than font-size:0, Bug on Safari*/
   vertical-align: top;
+}
+
+.crunchBlock,
+.crunchBlockNoBg {
+    width: 600px;
+    margin: auto;
+}
+
+.crunchBlock.crunchFitBlock,
+.crunchBlockNoBg.crunchFitBlock {
+    width: 100%;
 }
 
 .crunchCol .crunchButton td { letter-spacing: normal; }
