@@ -109,7 +109,8 @@ table td { border-collapse: collapse; }
 
 .crunchBlock div { padding: 10px; }
 
-.crunchBlock > table {
+.crunchBlock > table,
+.crunchBlockNoBg > table {
     width: 600px;
 }
 
@@ -122,6 +123,16 @@ table td { border-collapse: collapse; }
 .crunchCol td {
   letter-spacing: -5px;/*better than font-size:0, Bug on Safari*/
   vertical-align: top;
+}
+
+.crunchBlock,
+.crunchBlockNoBg {
+    width: 600px;
+}
+
+.crunchBlock.crunchFitBlock,
+.crunchBlockNoBg.crunchFitBlock {
+    width: 100%;
 }
 
 .crunchCol .crunchButton td { letter-spacing: normal; }
