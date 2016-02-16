@@ -86,7 +86,10 @@ table td { border-collapse: collapse; }
 
 .crunchGlobalWrapper { min-width: 600px; /*to Fix layout Gmail*/ }
 
-.crunchWFull { width: 600px; }
+.crunchWFull {
+    width: 100%;
+    min-width: 600px;
+}
 
 .crunchW3-4 { width: 450px; }
 .crunchW2-3 { width: 400px; }
@@ -105,6 +108,10 @@ table td { border-collapse: collapse; }
 .crunchBlockNoBg div { padding: 10px; }
 
 .crunchBlock div { padding: 10px; }
+
+.crunchBlock > table {
+    width: 600px;
+}
 
 .crunchCol div {
   display: inline-block;
