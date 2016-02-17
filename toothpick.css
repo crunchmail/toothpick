@@ -116,8 +116,16 @@ table td { border-collapse: collapse; }
 
 .crunchCol div {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   letter-spacing: normal;
+}
+
+.crunchCol.crunchBlockValignTop div {
+    vertical-align: top;
+}
+
+.crunchCol.crunchBlockValignBottom div {
+    vertical-align: bottom;
 }
 
 .crunchCol td {
