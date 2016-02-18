@@ -1,3 +1,14 @@
+/*
+ * @globalWidth: 600
+ */
+
+.crunchWFull { min-width: 600px; }
+
+.crunchBlock,
+.crunchBlockNoBg {
+    width: 600px;
+}
+
 .crunchBlock td { padding: 20px 30px; }
 
 .crunchBlockNoBg div { padding: 10px; }

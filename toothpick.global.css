@@ -66,12 +66,7 @@ table td { border-collapse: collapse; }
   2 = Layout
 ========================================================================== */
 
-.crunchGlobalWrapper { min-width: 600px; /*to Fix layout Gmail*/ }
-
-.crunchWFull {
-    width: 100%;
-    min-width: 600px;
-}
+.crunchWFull { width: 100%; }
 
 .crunchW3-4 { width: 450px; }
 .crunchW2-3 { width: 400px; }
@@ -106,7 +101,6 @@ table td { border-collapse: collapse; }
 
 .crunchBlock,
 .crunchBlockNoBg {
-    width: 600px;
     margin: auto;
 }
 
