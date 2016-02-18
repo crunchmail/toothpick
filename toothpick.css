@@ -2,10 +2,8 @@
   Sommaire
 
   1 = General Style
-  2 = Message header/footer
-  3 = Layout
-  4 = Style Elements
-  5 = Special Blocks
+  2 = Layout
+  3 = Styling Elements
 ========================================================================== */
 
 /* ==========================================================================
@@ -65,23 +63,7 @@ table {
 table td { border-collapse: collapse; }
 
 /* ==========================================================================
-  2 = Message header/footer
-========================================================================== */
-
-.crunchMessageUsers {
-  padding:15px;
-  font-size: 14px;
-  text-align: center;
-  font-family:Arial, sans-serif;
-  margin: 0;
-}
-
-.crunchMessageUsers a {
-  text-decoration: none;
-}
-
-/* ==========================================================================
-  3 = Layout
+  2 = Layout
 ========================================================================== */
 
 .crunchGlobalWrapper { min-width: 600px; /*to Fix layout Gmail*/ }
@@ -102,17 +84,6 @@ table td { border-collapse: collapse; }
 .crunchW1-8 { width: 69px; }
 .crunchW1-8 { width: 66px; }
 .crunchW1-10 { width: 60px; }
-
-.crunchBlock td { padding: 20px 30px; }
-
-.crunchBlockNoBg div { padding: 10px; }
-
-.crunchBlock div { padding: 10px; }
-
-.crunchBlock > table,
-.crunchBlockNoBg > table {
-    width: 600px;
-}
 
 .crunchCol div {
   display: inline-block;
@@ -154,30 +125,6 @@ table td { border-collapse: collapse; }
 .crunchBlockNoBg.crunch3Col div { width: 180px; }
 .crunchBlock.crunch3Col div { width: 160px; }
 
-/* 1-3 + 2-3 columns */
-.crunchBlock.crunch1-3ColLeft div:first-child { width: 160px; }
-.crunchBlockNoBg.crunch1-3ColLeft div:first-child { width: 180px; }
-.crunchBlock.crunch1-3ColLeft div:nth-child(2) { width: 340px; }
-.crunchBlockNoBg.crunch1-3ColLeft div:nth-child(2) { width: 360px; }
-
-/* 2-3 + 1-3 columns */
-.crunchBlock.crunch1-3ColRight div:first-child { width: 340px; }
-.crunchBlockNoBg.crunch1-3ColRight div:first-child { width: 360px; }
-.crunchBlock.crunch1-3ColRight div:nth-child(2) { width: 160px; }
-.crunchBlockNoBg.crunch1-3ColRight div:nth-child(2) { width: 180px; }
-
-/* 1-4 + 3-4 columns */
-.crunchBlock.crunch1-4ColLeft div:first-child { width: 110px; }
-.crunchBlockNoBg.crunch1-4ColLeft div:first-child { width: 130px; }
-.crunchBlock.crunch1-4ColLeft div:nth-child(2) { width: 410px; }
-.crunchBlockNoBg.crunch1-4ColLeft div:nth-child(2) { width: 430px; }
-
-/* 3-4 + 1-4 columns */
-.crunchBlock.crunch1-4ColRight div:first-child { width: 410px; }
-.crunchBlockNoBg.crunch1-4ColRight div:first-child { width: 430px; }
-.crunchBlock.crunch1-4ColRight div:nth-child(2) { width: 110px; }
-.crunchBlockNoBg.crunch1-4ColRight div:nth-child(2) { width: 130px; }
-
 .crunchInlineImg img {
   display: inline;
   width: auto;
@@ -189,47 +136,14 @@ table td { border-collapse: collapse; }
 }
 
 /* ==========================================================================
-  4 = Style Elements
+  3 = Styling Elements
 ========================================================================== */
-
-.crunchWrapper .crunchTitle,
-.crunchWrapper .crunchText,
-.crunchWrapper .crunchList,
-.crunchWrapper .crunchLink {
-  font-family: Arial, sans-serif;
-}
-
-.crunchWrapper .crunchTitle {
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.crunchTitle .crunchSubtitle {
-  font-size: 60%;
-  font-weight: normal;
-}
 
 .crunchTtu { text-transform: uppercase; }
 .crunchTar { text-align: right; }
 .crunchTac { text-align: center; }
 .crunchTac div { text-align: center; }
 .crunchTal { text-align: left; }
-
-.crunchWrapper .crunchText,
-.crunchWrapper .crunchList,
-.crunchWrapper .crunchLink {
-  line-height: 1.5;
-  font-size: 14px;
-}
-
-.crunchWrapper h1 { font-size: 30px; }
-.crunchWrapper h2 { font-size: 25px; }
-.crunchWrapper h3 { font-size: 18px; }
-.crunchWrapper h4,
-.crunchWrapper h5,
-.crunchWrapper h6 {
-  font-size: 14px;
-}
 
 .crunchWrapper .crunchElement {
   margin: 10px 0;
@@ -249,40 +163,4 @@ table td { border-collapse: collapse; }
 
 .crunchButton a { text-decoration: none; }
 
-.crunchButton td {
-  padding: 15px;
-  background: inherit;
-}
-
-
-
-/* ==========================================================================
-  5 = Special Blocks
-========================================================================== */
-
-.crunchBgFB { background: #004f7c; }
-.crunchBgFB a { color: #FFF; }
-
-.crunchButton.crunchSmallButton {
-  padding: 5px 10px;
-}
-
-.crunchCitation,
-.crunchCitation div {
-  text-align: center;
-}
-.crunchCitation .crunchText { font-size: 25px; }
-.crunchCitation img { margin: auto; }
-.crunchCitation .crunchButton { margin: auto; }
-
-.crunchSocial img, .crunchInlineImg img {
-  display: inline;
-}
-.crunchSocial img { margin: 0 10px; padding-top: 10px; }
-
-.crunchList {
-  padding-left: 16px;
-}
-.crunchList li {
-  list-style: disc;
-}
+.crunchButton td { background: inherit; }
