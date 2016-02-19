@@ -2,11 +2,19 @@ var gulp = require('gulp');
 var plugins = require("gulp-load-plugins")();
 var license_opts = {tiny: false, organization: 'Oasiswork'};
 
+gulp.task("less", function() {
+    gulp.src([
+        'less/*.less'
+    ])
+    .pipe(plugins.less())
+    .pipe(gulp.dest('./css'));
+});
+
 gulp.task("minify", function() {
     gulp.src([
-        'toothpick.css',
-        'toothpick.layout.css',
-        'toothpick.typo.css'
+        'css/toothpick.css',
+        'css/toothpick.layout.css',
+        'css/toothpick.typo.css'
     ])
     .pipe(plugins.concat('toothpick.min.css'))
     .pipe(plugins.cssnano())
@@ -14,5 +22,5 @@ gulp.task("minify", function() {
 });
 
 gulp.task('default', [
-    'minify'
+    'less', 'minify'
 ]);

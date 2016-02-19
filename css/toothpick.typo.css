@@ -1,42 +1,42 @@
 .crunchMessageUsers {
-  padding:15px;
+  padding: 15px;
   font-size: 14px;
   text-align: center;
-  font-family:Arial, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
 }
-
 .crunchMessageUsers a {
   text-decoration: none;
 }
-
 .crunchWrapper .crunchTitle,
 .crunchWrapper .crunchText,
 .crunchWrapper .crunchList,
 .crunchWrapper .crunchLink {
   font-family: Arial, sans-serif;
 }
-
 .crunchWrapper .crunchTitle {
   font-weight: bold;
   line-height: 1.2;
 }
-
 .crunchTitle .crunchSubtitle {
   font-size: 60%;
   font-weight: normal;
 }
-
 .crunchWrapper .crunchText,
 .crunchWrapper .crunchList,
 .crunchWrapper .crunchLink {
   line-height: 1.5;
   font-size: 14px;
 }
-
-.crunchWrapper h1 { font-size: 30px; }
-.crunchWrapper h2 { font-size: 25px; }
-.crunchWrapper h3 { font-size: 18px; }
+.crunchWrapper h1 {
+  font-size: 30px;
+}
+.crunchWrapper h2 {
+  font-size: 25px;
+}
+.crunchWrapper h3 {
+  font-size: 18px;
+}
 .crunchWrapper h4,
 .crunchWrapper h5,
 .crunchWrapper h6 {

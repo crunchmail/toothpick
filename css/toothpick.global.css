@@ -111,14 +111,6 @@ table td { border-collapse: collapse; }
 
 .crunchCol .crunchButton td { letter-spacing: normal; }
 
-/* 2 columns */
-.crunchBlockNoBg.crunch2Col div { width: 280px; }
-.crunchBlock.crunch2Col div { width: 250px; }
-
-/* 3 columns */
-.crunchBlockNoBg.crunch3Col div { width: 180px; }
-.crunchBlock.crunch3Col div { width: 160px; }
-
 .crunchInlineImg img {
   display: inline;
   width: auto;
