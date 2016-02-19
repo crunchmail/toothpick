@@ -1,8 +1,21 @@
+/*
+ * Variables
+ */
+
+ @globalFontFamily: Arial, sans-serif;
+ @globalLineHeight: 1.5;
+ @globalTextFontSize: 14px;
+ @globalH1FontSize: 30px;
+ @globalH2FontSize: 25px;
+ @globalH3FontSize: 18px;
+ @globalHxFontSize: 14px;
+ @subtitle: 60%;
+
 .crunchMessageUsers {
-    padding:15px;
-    font-size: 14px;
+    padding: 15px;
+    font-size: @globalTextFontSize;
     text-align: center;
-    font-family:Arial, sans-serif;
+    font-family: @globalFontFamily;
     margin: 0;
 }
 
@@ -14,7 +27,7 @@
 .crunchWrapper .crunchText,
 .crunchWrapper .crunchList,
 .crunchWrapper .crunchLink {
-    font-family: Arial, sans-serif;
+    font-family: @globalFontFamily;
 }
 
 .crunchWrapper .crunchTitle {
@@ -30,15 +43,15 @@
 .crunchWrapper .crunchText,
 .crunchWrapper .crunchList,
 .crunchWrapper .crunchLink {
-    line-height: 1.5;
-    font-size: 14px;
+    line-height: @globalLineHeight;
+    font-size: @globalTextFontSize;
 }
 
-.crunchWrapper h1 { font-size: 30px; }
-.crunchWrapper h2 { font-size: 25px; }
-.crunchWrapper h3 { font-size: 18px; }
+.crunchWrapper h1 { font-size: @globalH1FontSize; }
+.crunchWrapper h2 { font-size: @globalH2FontSize; }
+.crunchWrapper h3 { font-size: @globalH3FontSize; }
 .crunchWrapper h4,
 .crunchWrapper h5,
 .crunchWrapper h6 {
-    font-size: 14px;
+    font-size: @globalHxFontSize;
 }
