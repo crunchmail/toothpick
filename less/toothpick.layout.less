@@ -3,8 +3,21 @@
  */
 
 @email_width: 600px;
-@block_padding: 25px;
+@block_padding: 30px;
 @inner_block_padding: 10px;
+
+.crunchWFull { min-width: @email_width; }
+
+.crunchBlock td { padding: @block_padding - 10 @block_padding; }
+
+.crunchBlockNoBg div { padding: @inner_block_padding; }
+
+.crunchBlock div { padding: @inner_block_padding; }
+
+.crunchBlock,
+.crunchBlockNoBg {
+    width: @email_width;
+}
 
 /* 2 columns */
 .crunchBlock.crunch2Col div { width: (@email_width / 2) - @block_padding * 2; }
