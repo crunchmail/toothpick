@@ -8,6 +8,12 @@ gulp.task("less", function() {
     ])
     .pipe(plugins.less())
     .pipe(gulp.dest('./css'));
+
+    gulp.src([
+        'less/*.less'
+    ])
+    .pipe(plugins.concat('toothpick.commons.less'))
+    .pipe(gulp.dest('./less'));
 });
 
 gulp.task("minify", function() {

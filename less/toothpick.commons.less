@@ -1,0 +1,110 @@
+/*
+ * Variables
+ */
+
+@email_width: 600px;
+@block_padding: 25px;
+@inner_block_padding: 10px;
+
+.crunchWFull { min-width: @email_width; }
+
+.crunchBlock td { padding: @block_padding; }
+
+.crunchBlockNoBg div { padding: @inner_block_padding; }
+
+.crunchBlock div { padding: @inner_block_padding; }
+
+.crunchBlock,
+.crunchBlockNoBg {
+    width: @email_width;
+}
+
+/* 2 columns */
+.crunchBlock.crunch2Col div { width: (@email_width / 2) - @block_padding * 2; }
+.crunchBlockNoBg.crunch2Col div { width: (@email_width / 2) - @inner_block_padding * 2; }
+
+/* 3 columns */
+.crunchBlock.crunch3Col div { width: (@email_width / 3) - @block_padding * 2; }
+.crunchBlockNoBg.crunch3Col div { width: (@email_width / 3) - @inner_block_padding * 2; }
+
+/* 1-3 + 2-3 columns */
+.crunchBlock.crunch1-3ColLeft div:first-child { width: (@email_width / 3) - @block_padding * 2; }
+.crunchBlockNoBg.crunch1-3ColLeft div:first-child { width: (@email_width / 3) - @inner_block_padding * 2; }
+.crunchBlock.crunch1-3ColLeft div:nth-child(2) { width: (2 * @email_width / 3) - @block_padding * 2; }
+.crunchBlockNoBg.crunch1-3ColLeft div:nth-child(2) { width: (2 * @email_width / 3) - @inner_block_padding * 2; }
+
+/* 2-3 + 1-3 columns */
+.crunchBlock.crunch1-3ColRight div:first-child { width: (2 * @email_width / 3) - @block_padding * 2; }
+.crunchBlockNoBg.crunch1-3ColRight div:first-child { width: (2 * @email_width / 3) - @inner_block_padding * 2; }
+.crunchBlock.crunch1-3ColRight div:nth-child(2) { width: (@email_width / 3) - @block_padding * 2; }
+.crunchBlockNoBg.crunch1-3ColRight div:nth-child(2) { width: (@email_width / 3) - @inner_block_padding * 2; }
+
+/* 1-4 + 3-4 columns */
+.crunchBlock.crunch1-4ColLeft div:first-child { width: (@email_width / 4) - @block_padding * 2; }
+.crunchBlockNoBg.crunch1-4ColLeft div:first-child { width: (@email_width / 4) - @inner_block_padding * 2; }
+.crunchBlock.crunch1-4ColLeft div:nth-child(2) { width: (3 * @email_width / 4) - @block_padding * 2; }
+.crunchBlockNoBg.crunch1-4ColLeft div:nth-child(2) { width: (3 * @email_width / 4) - @inner_block_padding * 2; }
+
+/* 3-4 + 1-4 columns */
+.crunchBlock.crunch1-4ColRight div:first-child { width: (3 * @email_width / 4) - @block_padding * 2; }
+.crunchBlockNoBg.crunch1-4ColRight div:first-child { width: (3 * @email_width / 4) - @inner_block_padding * 2; }
+.crunchBlock.crunch1-4ColRight div:nth-child(2) { width: (@email_width / 4) - @block_padding * 2; }
+.crunchBlockNoBg.crunch1-4ColRight div:nth-child(2) { width: (@email_width / 4) - @inner_block_padding * 2; }
+
+/*
+ * Variables
+ */
+
+ @globalFontFamily: Arial;
+ @globalLineHeight: 1.5;
+ @globalTextFontSize: 14px;
+ @globalH1FontSize: 30px;
+ @globalH2FontSize: 25px;
+ @globalH3FontSize: 18px;
+ @globalHxFontSize: 14px;
+ @subtitle: 60%;
+
+.crunchMessageUsers {
+    padding: 15px;
+    font-size: @globalTextFontSize;
+    text-align: center;
+    font-family: @globalFontFamily, sans-serif;
+    margin: 0;
+}
+
+.crunchMessageUsers a {
+    text-decoration: none;
+}
+
+.crunchWrapper .crunchTitle,
+.crunchWrapper .crunchText,
+.crunchWrapper .crunchList,
+.crunchWrapper .crunchLink {
+    font-family: @globalFontFamily, sans-serif;
+}
+
+.crunchWrapper .crunchTitle {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.crunchTitle .crunchSubtitle {
+    font-size: @subtitle;
+    font-weight: normal;
+}
+
+.crunchWrapper .crunchText,
+.crunchWrapper .crunchList,
+.crunchWrapper .crunchLink {
+    line-height: @globalLineHeight;
+    font-size: @globalTextFontSize;
+}
+
+.crunchWrapper h1 { font-size: @globalH1FontSize; }
+.crunchWrapper h2 { font-size: @globalH2FontSize; }
+.crunchWrapper h3 { font-size: @globalH3FontSize; }
+.crunchWrapper h4,
+.crunchWrapper h5,
+.crunchWrapper h6 {
+    font-size: @globalHxFontSize;
+}
