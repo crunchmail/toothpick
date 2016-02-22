@@ -7,20 +7,20 @@ gulp.task("less", function() {
         'less/*.less'
     ])
     .pipe(plugins.less())
-    .pipe(gulp.dest('./css'));
+    .pipe(plugins.concat('toothpick.commons.css'))
+    .pipe(gulp.dest('./dist'));
 
     gulp.src([
         'less/*.less'
     ])
     .pipe(plugins.concat('toothpick.commons.less'))
-    .pipe(gulp.dest('./less'));
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task("minify", function() {
     gulp.src([
-        'css/toothpick.css',
-        'css/toothpick.layout.css',
-        'css/toothpick.typo.css'
+        'css/toothpick.global.css',
+        'dist/toothpick.commons.css'
     ])
     .pipe(plugins.concat('toothpick.min.css'))
     .pipe(plugins.cssnano())
