@@ -82,7 +82,6 @@ table td { border-collapse: collapse; }
 
 .crunchCol div {
   display: inline-block;
-  vertical-align: middle;
   letter-spacing: normal;
 }
 
@@ -92,6 +91,10 @@ table td { border-collapse: collapse; }
 
 .crunchCol.crunchBlockValignBottom div {
     vertical-align: bottom;
+}
+
+.crunchCol.crunchBlockValignMiddle div {
+    vertical-align: middle;
 }
 
 .crunchCol td {

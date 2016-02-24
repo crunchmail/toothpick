@@ -12,9 +12,14 @@
 }
 .crunchBlock div {
   padding: 10px;
+  vertical-align: middle;
 }
 .crunchBlock,
 .crunchBlockNoBg {
+  width: 600px;
+}
+.crunchBlock.crunchFitBlock > table,
+.crunchBlockNoBg.crunchFitBlock > table {
   width: 600px;
 }
 /* 2 columns */

@@ -5,6 +5,7 @@
 @email_width: 600px;
 @block_padding: 25px;
 @inner_block_padding: 10px;
+@align_block: middle;
 
 .crunchWFull { min-width: @email_width; }
 
@@ -12,10 +13,18 @@
 
 .crunchBlockNoBg div { padding: @inner_block_padding; }
 
-.crunchBlock div { padding: @inner_block_padding; }
+.crunchBlock div {
+    padding: @inner_block_padding;
+    vertical-align: @align_block;
+}
 
 .crunchBlock,
 .crunchBlockNoBg {
+    width: @email_width;
+}
+
+.crunchBlock.crunchFitBlock > table,
+.crunchBlockNoBg.crunchFitBlock > table {
     width: @email_width;
 }
 
