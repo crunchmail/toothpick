@@ -16,6 +16,7 @@
     }
     table[class*="crunchWFull"]{
         width:100%!important;
+        min-width: 0;
     }
     div[class*="crunchBlockNoBg"].crunch2Col div{
         padding:0 10px!important;
