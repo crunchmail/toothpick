@@ -17,6 +17,13 @@ gulp.task("less", function() {
     .pipe(gulp.dest('./dist'));
 });
 
+gulp.task("rwd", function() {
+    gulp.src([
+        'rwd/*.css'
+    ])
+    .pipe(gulp.dest('./dist'));
+});
+
 gulp.task("minify", function() {
     gulp.src([
         'css/toothpick.global.css',
@@ -28,5 +35,5 @@ gulp.task("minify", function() {
 });
 
 gulp.task('default', [
-    'less', 'minify'
+    'less', 'minify', 'rwd'
 ]);
