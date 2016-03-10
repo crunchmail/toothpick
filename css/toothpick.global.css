@@ -126,6 +126,11 @@ table td { border-collapse: collapse; }
 
 .crunchGlobalWrapper .crunchNoPadding { padding: 0; }
 
+.crunchSeparator,
+.crunchSeparator td {
+    padding: 0;
+}
+
 /* ==========================================================================
   3 = Styling Elements
 ========================================================================== */
