@@ -124,6 +124,8 @@ table td { border-collapse: collapse; }
   vertical-align: middle;
 }
 
+.crunchGlobalWrapper .crunchNoPadding { padding: 0; }
+
 /* ==========================================================================
   3 = Styling Elements
 ========================================================================== */
