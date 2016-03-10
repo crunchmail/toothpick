@@ -133,6 +133,7 @@ table td { border-collapse: collapse; }
 .crunchTtu { text-transform: uppercase; }
 .crunchTar { text-align: right; }
 .crunchTac { text-align: center; }
+.crunchTac img { margin: auto; }
 .crunchTac div { text-align: center; }
 .crunchTal { text-align: left; }
 
