@@ -137,10 +137,19 @@ table td { border-collapse: collapse; }
 
 .crunchTtu { text-transform: uppercase; }
 .crunchTar { text-align: right; }
+.crunchTar .crunchButton {
+    margin: 0 inherit 0 auto;
+}
 .crunchTac { text-align: center; }
-.crunchTac img { margin: auto; }
+.crunchTac img,
+.crunchTac .crunchButton {
+    margin: auto;
+}
 .crunchTac div { text-align: center; }
 .crunchTal { text-align: left; }
+.crunchTal .crunchButton {
+    margin: 0 auto 0 inherit;
+}
 
 .crunchWrapper .crunchElement {
   margin: 10px 0;
