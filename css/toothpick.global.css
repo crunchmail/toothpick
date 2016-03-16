@@ -138,7 +138,8 @@ table td { border-collapse: collapse; }
 .crunchTtu { text-transform: uppercase; }
 .crunchTar { text-align: right; }
 .crunchTar .crunchButton {
-    margin: 0 inherit 0 auto;
+    margin-left: auto;
+    margin-right: inherit;
 }
 .crunchTac { text-align: center; }
 .crunchTac img,
@@ -148,7 +149,8 @@ table td { border-collapse: collapse; }
 .crunchTac div { text-align: center; }
 .crunchTal { text-align: left; }
 .crunchTal .crunchButton {
-    margin: 0 auto 0 inherit;
+    margin-right: auto;
+    margin-left: inherit;
 }
 
 .crunchWrapper .crunchElement {
