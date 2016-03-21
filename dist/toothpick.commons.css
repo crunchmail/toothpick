@@ -8,6 +8,7 @@
   padding: 25px;
 }
 .crunchBlockNoBg div {
+  vertical-align: middle;
   padding: 10px;
 }
 .crunchBlock div {
