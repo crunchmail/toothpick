@@ -11,6 +11,10 @@
         display:block!important;
         box-sizing: border-box;
     }
+    div[class*="crunchBlock"] img,
+    div[class*="crunchBlockNoBg"] img{
+        width:100%!important;
+    }
     [class*="crunchTar"]{
         text-align:left!important;
     }
