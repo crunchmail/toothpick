@@ -11,9 +11,9 @@
         display:block!important;
         box-sizing: border-box;
     }
-    div[class*="crunchBlock"] img,
-    div[class*="crunchBlockNoBg"] img{
-        width:100%!important;
+    div[class*="crunchBlock"] table,
+    div[class*="crunchBlockNoBg"] table{
+        table-layout: fixed;
     }
     [class*="crunchTar"]{
         text-align:left!important;
