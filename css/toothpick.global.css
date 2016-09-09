@@ -46,11 +46,9 @@ a img {
 }
 
 img {
-  height: auto;
   outline: 0;
   text-decoration: none;
   max-width: 100%;
-  width: auto;
   display: block;
   -ms-interpolation-mode: bicubic;
 }
