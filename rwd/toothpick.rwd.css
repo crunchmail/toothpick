@@ -11,6 +11,9 @@
         display:block!important;
         box-sizing: border-box;
     }
+    img {
+        margin: auto!important;
+    }
     div[class*="crunchBlock"] table,
     div[class*="crunchBlockNoBg"] table{
         table-layout: fixed;
