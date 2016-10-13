@@ -167,6 +167,14 @@ table td { border-collapse: collapse; }
 
 .crunchButton p { margin: 0; }
 
-.crunchButton a { text-decoration: none; }
+.crunchButton a {
+    text-decoration: none;
+    padding: 20px!important;
+    border: 1px solid transparent!important;
+    display: block;
+}
 
-.crunchButton td { background: inherit; }
+.crunchButton td {
+    background: inherit;
+    padding: 0!important;
+}
