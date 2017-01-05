@@ -1,6 +1,6 @@
-# Toothpick - Emailing framework
+# Toothpick - Emailing framework for Toothpaste
 
-## HTML structure
+## HTML structure for blocks
 
 ### One column block
 
@@ -83,7 +83,34 @@
 <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
 ```
 
-## Block classes
+## HTML structure for element
+
+### Title h1, h2, h3
+```html
+    <h1 class="crunchTitle crunchElement">Donec ullamcorper nulla metus</h1>
+```
+
+### Paragraph
+```html
+    <p class="crunchText crunchElement">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum accusamus laborum laboriosam consequuntur, enim nihil, rerum necessitatibus voluptates facilis ipsam iste incidunt eius quae atque hic perferendis itaque ad soluta.</p>
+```
+
+### Button
+```html
+    <table class="crunchButton crunchElement" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <a class="crunchLink" href="">Button</a>
+            </td>
+        </tr>
+    </table>
+```
+### Image
+```html
+    <img src="http://placehold.it/600x250" />
+```
+
+### Block classes
 
 `crunchWrapper`: Global class to set basic style on several elements (mandatory)
 `crunchBlock`: Add padding on td element (25px) (mandatory, choose between crunchBlock and crunchBlockNoBg)
@@ -107,3 +134,70 @@
 
 `crunchTitle`: Title h1, h2, h3 ...
 `crunchText`: Paragraph p
+`crunchButton`: Basic style for button
+
+## How to create a toothpaste template :
+
+### Global template configuration and structure
+Toothpaste wysiwyg conf : title, img, text, button. Use the `data-conf` attribute to add wisywg configuration on element.
+
+Example for a image :
+```html
+    <img data-conf="img" src="http://placehold.it/600x250" />
+    <!-- or -->
+    <a href="#" data-conf="img">
+        <img src="http://placehold.it/600x250" />
+    </a>
+```
+
+Create your html and use `toothpage_htmlToJson.js` file to convert your html into json object
+
+```javascript
+    fct.convertTemplate('template_id');
+```
+
+### Template style
+Create a less file with your properties
+
+You can create custom style configuration for Toothpaste edition with less variables
+
+Example :
+```less
+    @marginBlock: 30px;
+    @_marginBlock_name: "Spaces beetween blocks";
+    @_marginBlock_type: "range";
+    @_marginBlock_min: 0;
+    @_marginBlock_max: 50;
+```
+
+A toothpaste template have 6 colors maximum.
+
+```less
+    @primary_color:#16a085;
+    @secondary_color0:#ecf0f1;
+    @secondary_color1:#FFFFFF;
+    @secondary_color2:#34495e;
+    @secondary_color3:#bdc3c7;
+    @secondary_color4:#666666;
+```
+
+Template color file is a json :
+
+```json
+    {
+        "primary_color":"#16a085",
+        "secondary_color0":"#ecf0f1",
+        "secondary_color1":"#FFFFFF",
+        "secondary_color2":"#34495e",
+        "secondary_color3":"#bdc3c7",
+        "secondary_color4":"#666666"
+    }
+```
+
+### Final file architecture
+
+```
+    content.json (contain json template)
+    color_set.json (template colors)
+    style_set.less
+```
