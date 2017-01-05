@@ -35,8 +35,12 @@ gulp.task("minify", function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task("docs", function() {
-    del("docs");
+gulp.task("clean_doc", function() {
+    del("docs/*");
+});
+
+gulp.task("docs", ["clean_doc"], function() {
+
     gulp.src('README.md')
         .pipe(plugins.markdown())
         .pipe(plugins.rename("index.html"))

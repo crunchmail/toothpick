@@ -112,29 +112,29 @@
 
 ### Block classes
 
-`crunchWrapper`: Global class to set basic style on several elements (mandatory)
-`crunchBlock`: Add padding on td element (25px) (mandatory, choose between crunchBlock and crunchBlockNoBg)
-`crunchBlockNoBg`: Remove padding on td element (mandatory, choose between crunchBlock and crunchBlockNoBg)
-`crunchFitBlock`: Set a 100% width
-`crunchBgPrimaryColor`: Set the primary background color.
-`crunchTac`: Center text
-`crunchTal`: Align text on left
-`crunchTar`: Align text on right
-`crunchCol`: To apply columns setup on block
-`crunchCol2`: 2 columns
-`crunchCol3`: 3 columns
-`crunch1-3ColLeft`: Left column with 1/3 width and right with 2/3
-`crunch1-3ColRight`: Right column with 1/3 width and left with 2/3
-`crunch1-4ColRight`: Right column with 1/4 width and left with 3/4
-`crunch1-4ColLeft`: Left column with 1/4 width and right with 3/4
-`crunchMessageUsers`: Basic style for header and footer message
-`crunchInlineImg`: Set image(s) on inline position
+* `crunchWrapper`: Global class to set basic style on several elements (mandatory)
+* `crunchBlock`: Add padding on td element (25px) (mandatory, choose between crunchBlock and crunchBlockNoBg)
+* `crunchBlockNoBg`: Remove padding on td element (mandatory, choose between crunchBlock and crunchBlockNoBg)
+* `crunchFitBlock`: Set a 100% width
+* `crunchBgPrimaryColor`: Set the primary background color.
+* `crunchTac`: Center text
+* `crunchTal`: Align text on left
+* `crunchTar`: Align text on right
+* `crunchCol`: To apply columns setup on block
+* `crunchCol2`: 2 columns
+* `crunchCol3`: 3 columns
+* `crunch1-3ColLeft`: Left column with 1/3 width and right with 2/3
+* `crunch1-3ColRight`: Right column with 1/3 width and left with 2/3
+* `crunch1-4ColRight`: Right column with 1/4 width and left with 3/4
+* `crunch1-4ColLeft`: Left column with 1/4 width and right with 3/4
+* `crunchMessageUsers`: Basic style for header and footer message
+* `crunchInlineImg`: Set image(s) on inline position
 
 ## Element classes
 
-`crunchTitle`: Title h1, h2, h3 ...
-`crunchText`: Paragraph p
-`crunchButton`: Basic style for button
+* `crunchTitle`: Title h1, h2, h3 ...
+* `crunchText`: Paragraph p
+* `crunchButton`: Basic style for button
 
 ## How to create a toothpaste template :
 
