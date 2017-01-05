@@ -43,6 +43,11 @@ gulp.task("docs", function() {
         .pipe(gulp.dest('docs'));
 });
 
+gulp.task("deploy", ['docs'], function() {
+    gulp.src('docs/*')
+        .pipe(plugins.ghPages());
+});
+
 gulp.task('default', [
     'less', 'minify', 'rwd'
 ]);
