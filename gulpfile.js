@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var plugins = require("gulp-load-plugins")();
 var license_opts = {tiny: false, organization: 'Oasiswork'};
+var del = require('del');
 
 gulp.task("less", function() {
     gulp.src([
@@ -32,6 +33,14 @@ gulp.task("minify", function() {
     .pipe(plugins.concat('toothpick.min.css'))
     .pipe(plugins.cssnano())
     .pipe(gulp.dest('./'));
+});
+
+gulp.task("docs", function() {
+    del("docs");
+    gulp.src('README.md')
+        .pipe(plugins.markdown())
+        .pipe(plugins.rename("index.html"))
+        .pipe(gulp.dest('docs'));
 });
 
 gulp.task('default', [
