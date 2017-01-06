@@ -35,23 +35,6 @@ gulp.task("minify", function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task("clean_doc", function() {
-    del("docs/*");
-});
-
-gulp.task("docs", ["clean_doc"], function() {
-
-    gulp.src('README.md')
-        .pipe(plugins.markdown())
-        .pipe(plugins.rename("index.html"))
-        .pipe(gulp.dest('docs'));
-});
-
-gulp.task("deploy", ['docs'], function() {
-    gulp.src('docs/*')
-        .pipe(plugins.ghPages());
-});
-
 gulp.task('default', [
     'less', 'minify', 'rwd'
 ]);
